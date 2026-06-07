@@ -7,6 +7,7 @@ from mlx_cpt_plus.prediction.ranking import Ranking
 from mlx_cpt_plus.prediction.predictor import Predictor
 from mlx_cpt_plus.prediction.next_item import NextItem
 from mlx_cpt_plus.prediction.topk import TopK
+from mlx_cpt_plus.prediction.pnr import PNR
 
 __all__ = [
     "CandidateRetrieval",
@@ -16,4 +17,5 @@ __all__ = [
     "Predictor",
     "NextItem",
     "TopK",
+    "PNR",
 ]

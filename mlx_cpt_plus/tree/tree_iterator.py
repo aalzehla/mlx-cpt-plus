@@ -1,6 +1,6 @@
 """Tree iterator for traversing prediction trees."""
 
-from typing import Iterator, Optional
+from typing import Iterator, Optional, List
 from mlx_cpt_plus.tree.node import Node
 from mlx_cpt_plus.tree.prediction_tree import PredictionTree
 
