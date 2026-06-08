@@ -69,7 +69,7 @@ class CPTPlus:
             for item in seq:
                 self.vocabulary.add_token(str(item))
         
-# Store sequences and update inverted index
+        # Store sequences and update inverted index
         for seq_id, seq in enumerate(sequences):
             self.sequence_store.add(seq)
             self.inverted_index.add_batch(seq, seq_id)

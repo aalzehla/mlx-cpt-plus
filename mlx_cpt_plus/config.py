@@ -28,7 +28,7 @@ class Config:
     max_depth: int = 10
     learning_rate: float = 0.1
     use_mlx: bool = True
-    device: str = "cpu"
+    device: str = "mps"
     
     def __post_init__(self):
         """Validate configuration."""
@@ -46,5 +46,5 @@ class Config:
             raise ValueError("max_depth must be positive")
         if not 0 < self.learning_rate <= 1:
             raise ValueError("learning_rate must be in (0, 1]")
-        if self.device not in ("cpu", "gpu"):
-            raise ValueError("device must be 'cpu' or 'gpu'")
+        if self.device not in ("cpu", "gpu","mps"):
+            raise ValueError("device must be 'cpu', mps, or 'gpu'")
